@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/rounded_rectangle"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <ImageView
+        android:id="@+id/ivAd"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_below="@id/ivAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/ad_text_margin_vertical"/>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_below="@id/description"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ad_text_margin_vertical"
+        android:layout_marginBottom="@dimen/ad_text_margin_vertical" />
+
+    <ImageButton
+        android:id="@+id/ibRemoveCampaign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivAd"
+        android:src="@mipmap/trash_icon"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/ad_text_margin_vertical"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:gravity="left|bottom"/>
+
+</RelativeLayout>
